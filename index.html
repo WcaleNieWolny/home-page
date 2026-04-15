@@ -85,7 +85,7 @@
 <body>
   <main>
     <h1>Countdown to</h1>
-    <h2 id="target-title">24 May</h2>
+    <h2 id="target-title">Zürich trip🇨🇭🍫</h2>
     <div id="countdown" class="countdown">
       <div class="unit"><div class="value" id="days">--</div><div class="label">Days</div></div>
       <div class="unit"><div class="value" id="hours">--</div><div class="label">Hours</div></div>
@@ -108,8 +108,6 @@
       }
 
       const target = nextTarget();
-      document.getElementById('target-title').textContent =
-        '24 May ' + target.getFullYear();
       document.getElementById('footer').textContent =
         'Target: ' + target.toDateString();
 
@@ -124,7 +122,7 @@
       function tick() {
         const diff = target - new Date();
         if (diff <= 0) {
-          countdownEl.innerHTML = '<div class="done">It\u2019s 24 May! \u{1F389}</div>';
+          countdownEl.innerHTML = '<div class="done">Z\u00fcrich time! \u{1F1E8}\u{1F1ED}\u{1F36B}</div>';
           return;
         }
         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
